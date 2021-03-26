@@ -13,8 +13,8 @@
 */
 
 const average = (array) => {
-  let soma = 0;
   let cont = 0;
+  let soma = 0;
   if (array.length === 0) {
     throw new Error('undefined');
   } else {
