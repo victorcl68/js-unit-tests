@@ -13,21 +13,20 @@
 */
 
 const average = (array) => {
-  let cont = 0;
   let soma = 0;
   if (array.length === 0) {
     throw new Error('undefined');
-  } else {
-    for (let index in array) {
-      if (typeof (array[index]) !== 'number') {
-        throw new Error('undefined');
-      } else {
-        soma += array[index];
-        cont += 1;
-      }
-    }
-    return Math.round(soma / cont);
   }
+  for (let index in array) {
+    if (typeof (array[index]) !== 'number') {
+      throw new Error('undefined');
+    } else {
+      soma += array[index];
+    }
+  }
+  return Math.round(soma / array.length);
 };
+
+console.log(average([]));
 
 module.exports = average;
