@@ -22,7 +22,7 @@ const average = (array) => {
     soma += array[index];
     cont += 1;
   }
-  return soma/cont;
+  return Math.round(soma/cont);
 };
 
 module.exports = average;
