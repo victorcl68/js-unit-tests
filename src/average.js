@@ -25,5 +25,6 @@ const average = (array) => {
   }
   return Math.round(soma / (array.length));
 };
+// Não conseguia resolver a função mas ao ver a resolução no Github do Thiago Felipe, consegui corrigir os pequenos erros do meu código;
 
 module.exports = average;
